@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(7, 7, 7);
+}
+
+.heading {
+    color: white;
+    font-size: 30px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-container input {
+    padding: 20px 30px;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+
+}
+
+#btn {
+    color: rgb(19, 18, 18);
+    background-color: rgb(135, 11, 252);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+.highlight {
+    color: red;
+    /* or any other color you prefer */
+    font-weight: bold;
+}
