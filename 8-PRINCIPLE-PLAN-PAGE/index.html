@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .pricing-plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .plan {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .plan h2 {
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+
+        .plan p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        .plan .price {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .plan button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .plan button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pricing Plans</h1>
+    </header>
+    <main>
+        <section class="pricing-plans">
+            <div class="plan">
+                <h2>Basic Plan</h2>
+                <p class="price">$9.99/month</p>
+                <p>Basic features for personal use</p>
+                <ul>
+                    <li>10 GB Storage</li>
+                    <li>Email Support</li>
+                    <li>Basic Analytics</li>
+                </ul>
+                <button>Sign Up</button>
+            </div>
+            <div class="plan">
+                <h2>Standard Plan</h2>
+                <p class="price">$19.99/month</p>
+                <p>Advanced features for small teams</p>
+                <ul>
+                    <li>50 GB Storage</li>
+                    <li>Priority Email Support</li>
+                    <li>Advanced Analytics</li>
+                </ul>
+                <button>Sign Up</button>
+            </div>
+            <div class="plan">
+                <h2>Premium Plan</h2>
+                <p class="price">$29.99/month</p>
+                <p>All features for businesses</p>
+                <ul>
+                    <li>Unlimited Storage</li>
+                    <li>24/7 Support</li>
+                    <li>Custom Analytics</li>
+                </ul>
+                <button>Sign Up</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Pricing Plans</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.getElementById('year');
+            yearSpan.textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+
+</html>
