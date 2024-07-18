@@ -12,3 +12,6 @@ right.addEventListener('click', () => {
     wrong.style.display = 'flex'
 
 })
+
+
+

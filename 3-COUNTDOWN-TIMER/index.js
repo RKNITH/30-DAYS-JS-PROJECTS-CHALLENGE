@@ -22,21 +22,19 @@ secs.innerHTML = formateTime(second)
 
 
 start.addEventListener('click', () => {
-    if (timerId == null) {
-        let timerId = setInterval(() => {
-            timerValue -= 1
-            let hour = Math.floor(timerValue / 60 / 60)
-            let minutes = Math.floor(timerValue / 60)
-            let second = Math.floor(timerValue % 60)
-            if (timerValue < 0) {
-                alert('Time Over')
-            }
+    setInterval(() => {
+        timerValue -= 1
+        let hour = Math.floor(timerValue / 60 / 60)
+        let minutes = Math.floor(timerValue / 60)
+        let second = Math.floor(timerValue % 60)
+        if (timerValue < 0) {
+            alert('Time Over')
+        }
 
-            hours.innerHTML = formateTime(hour)
-            mins.innerHTML = formateTime(minutes)
-            secs.innerHTML = formateTime(second)
+        hours.innerHTML = formateTime(hour)
+        mins.innerHTML = formateTime(minutes)
+        secs.innerHTML = formateTime(second)
 
-        }, 1000)
-    }
+    }, 1000)
 })
 
