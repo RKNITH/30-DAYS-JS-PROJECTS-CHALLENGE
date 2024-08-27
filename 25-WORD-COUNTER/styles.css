@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: grey;
+    border: none;
+
+    padding: 10px;
+}
+
+#text {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#result {
+    font-size: 20px;
+    color: blueviolet;
+    font-family: cursive;
+}
+
+#calculate {
+    background-color: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+
+}
+
+#calculate:hover {
+    background-color: rgb(10, 10, 160);
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .main-container {
+        max-width: 90%;
+
+    }
+
+    #calculate {
+        margin-top: 20px;
+    }
+
+
+}
