@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Filter Items</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-container">
+            <h1>Filter Items</h1>
+            <div class="display-container" id="display">
+                <!-- All items will be displayed here -->
+            </div>
+
+            <div class="filters">
+                <div class="filter-container">
+                    <label for="fruit">Fruits</label>
+                    <input type="checkbox" id="fruit" />
+                </div>
+                <div class="filter-container">
+                    <label for="animal">Animals</label>
+                    <input type="checkbox" id="animal" />
+                </div>
+                <div class="filter-container">
+                    <label for="flower">Flowers</label>
+                    <input type="checkbox" id="flower" />
+                </div>
+            </div>
+
+            <div class="display-container">
+                <div id="result">
+                    <!-- Filtered items will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+
+</html>
