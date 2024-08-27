@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+#header {
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 40px;
+    color: blueviolet;
+    font-family: cursive;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.min,
+.sec {
+    font-size: 2.5rem;
+    color: #333333;
+}
+
+.min span:first-child,
+.sec span:first-child {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+#min {
+    background-color: cadetblue;
+    border-radius: 3px;
+}
+
+#sec {
+    background-color: cadetblue;
+    border-radius: 3px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start {
+    background-color: #ff6347;
+
+}
+
+#start:hover {
+    background-color: #c43b26;
+}
+
+#restart {
+    background-color: blue;
+
+}
+
+#restart:hover {
+    background-color: rgb(3, 3, 116);
+}
+
+#pause {
+    background-color: green;
+
+}
+
+#pause:hover {
+    background-color: rgb(19, 212, 19);
+}
+
+#round {
+    margin-top: 20px;
+    color: blueviolet;
+    font-family: cursive;
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+    .main-container {
+        width: 80%;
+    }
+
+    .timer-container {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        width: 60%;
+    }
+
+    .timer-container {
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        width: 40%;
+    }
+
+    #header {
+        font-size: 2rem;
+    }
+
+    .min span:first-child,
+    .sec span:first-child {
+        font-size: 4rem;
+    }
+}
