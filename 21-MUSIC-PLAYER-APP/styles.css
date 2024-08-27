@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+
+
+
+/* Music Player Container */
+.music-player {
+    background: linear-gradient(145deg, #333333, #1a1a1a);
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Music Info */
+.music-info h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Progress Container */
+.progress-container {
+    background: #2e2e2e;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.progress {
+    background: #ff0048;
+    border-radius: 10px;
+    height: 100%;
+    width: 0;
+}
+
+/* Time Display */
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.navigation button {
+    background: #ff0048;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navigation button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 0, 72, 0.4);
+}
+
+.navigation button:active {
+    transform: scale(0.9);
+}
+
+.navigation button i {
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .music-player {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .navigation button {
+        height: 45px;
+        width: 45px;
+        font-size: 1rem;
+    }
+
+    .music-info h4 {
+        font-size: 1rem;
+    }
+}

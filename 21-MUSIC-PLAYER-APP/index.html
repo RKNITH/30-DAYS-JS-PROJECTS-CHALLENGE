@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="music-player">
+        <div class="music-info">
+            <h4 id="title">Song Title</h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time">
+                <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+            </div>
+        </div>
+        <audio id="audio"></audio>
+        <div class="navigation">
+            <button class="prev" id="prev"><i class="fas fa-backward"></i></button>
+            <button class="play" id="play"><i class="fas fa-play"></i></button>
+            <button class="next" id="next"><i class="fas fa-forward"></i></button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c1a2a1f604.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
