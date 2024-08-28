@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gradient Generator</h1>
+    </header>
+
+    <main>
+        <section id="controls">
+            <div class="control-group">
+                <label for="color1">Color 1:</label>
+                <input type="color" id="color1" value="#ff0000">
+            </div>
+            <div class="control-group">
+                <label for="color2">Color 2:</label>
+                <input type="color" id="color2" value="#0000ff">
+            </div>
+            <div class="control-group">
+                <label for="direction">Direction:</label>
+                <input type="range" id="direction" min="0" max="360" value="90">
+                <span id="directionValue">90°</span>
+            </div>
+            <div class="control-group">
+                <label for="gradientType">Type:</label>
+                <select id="gradientType">
+                    <option value="linear">Linear</option>
+                    <option value="radial">Radial</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="preview">
+            <div id="gradientPreview"></div>
+        </section>
+
+        <section id="generatedCode">
+            <h2>CSS Code</h2>
+            <textarea id="cssCode" readonly></textarea>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
